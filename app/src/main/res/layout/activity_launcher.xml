@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="koolkat.notiminder.LauncherActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<com.github.clans.fab.FloatingActionMenu-->
+        <!--android:id="@+id/fab_add_item"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:clickable="true"-->
+        <!--app:layout_anchorGravity="bottom|right|end"-->
+        <!--app:menu_animationDelayPerItem="55"-->
+        <!--app:menu_backgroundColor="@android:color/transparent"-->
+        <!--app:menu_buttonSpacing="0dp"-->
+        <!--app:menu_colorNormal="@color/colorAccent"-->
+        <!--app:menu_colorPressed="@color/colorAccent"-->
+        <!--app:menu_colorRipple="@color/colorAccent"-->
+        <!--app:menu_fab_label="FAB"-->
+        <!--app:menu_fab_size="normal"-->
+        <!--app:menu_icon="@drawable/ic_plus"-->
+        <!--app:menu_labels_colorNormal="#333"-->
+        <!--app:menu_labels_colorPressed="#444"-->
+        <!--app:menu_labels_colorRipple="#66efecec"-->
+        <!--app:menu_labels_cornerRadius="3dp"-->
+        <!--app:menu_labels_ellipsize="none"-->
+        <!--app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"-->
+        <!--app:menu_labels_margin="0dp"-->
+        <!--app:menu_labels_maxLines="-1"-->
+        <!--app:menu_labels_padding="8dp"-->
+        <!--app:menu_labels_position="left"-->
+        <!--app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"-->
+        <!--app:menu_labels_showShadow="true"-->
+        <!--app:menu_labels_singleLine="false"-->
+        <!--app:menu_labels_textColor="#f2f1f1"-->
+        <!--app:menu_labels_textSize="15sp"-->
+        <!--app:menu_openDirection="up"-->
+        <!--app:menu_shadowRadius="4dp"-->
+        <!--app:menu_shadowXOffset="1dp"-->
+        <!--app:menu_shadowYOffset="4dp"-->
+        <!--app:menu_showShadow="true">-->
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab_reminder"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_reminder"-->
+            <!--app:fab_label="Reminder"-->
+            <!--app:fab_size="mini"/>-->
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab_note"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_note"-->
+            <!--app:fab_label="Note"-->
+            <!--app:fab_size="mini"/>-->
+
+    <!--</com.github.clans.fab.FloatingActionMenu>-->
+
+    <android.support.design.widget.FloatingActionButton
+    android:id="@+id/add_item_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:clickable="true"
+    android:layout_gravity="end|bottom"
+    app:layout_anchorGravity="bottom|right|end"
+    android:src="@drawable/ic_plus"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="koolkat.notiminder.NoteFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/active_notiminders_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_notiminder_layout"
+            android:text="NOTES"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/note_layout" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/notes_recycler_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@id/active_notiminders_tv"-->
+            <!--android:scrollbars="vertical" />-->
+
+    </RelativeLayout>
+
+</FrameLayout>

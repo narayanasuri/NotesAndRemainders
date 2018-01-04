@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Remindifiy</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_checkbox_persistent">Persistent</string>
+    <string name="sample_text">Bacon ipsum dolor amet tail jerky landjaeger pork meatball rump shank. Frankfurter beef sausage spare ribs tri-tip brisket cupim fatback corned beef biltong. Jowl t-bone boudin, brisket biltong flank beef ribs ham tail pork strip steak. Swine pork chop pork loin ball tip burgdoggen rump venison beef, alcatra biltong capicola turkey cow jerky turducken. Burgdoggen meatball alcatra swine ball tip jerky tail, venison ribeye doner prosciutto.</string>
+</resources>
