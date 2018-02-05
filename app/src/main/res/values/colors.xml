@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="matteblack">#222222</color>
+    <color name="colorPrimary">#3cd5b3</color>
+    <color name="colorPrimaryDark">#00a383</color>
+    <!--<color name="colorPrimary">#AD1457</color>-->
+    <!--<color name="colorPrimaryDark">#78002e</color>-->
+    <color name="colorAccent">#F50057</color>
+
+    <color name="lightGrey">#727272</color>
+    <color name="black">#000000</color>
+
+    <color name="material_red">#EB4E8B</color>
+    <color name="material_black">#212121</color>
+    <color name="material_sky_blue">#4285F4</color>
+    <color name="material_dark">#424242</color>
+    <color name="white_dark">#757575</color>
+    <color name="material_white">#E1E2E1</color>
+
+    <color name="light_background">#FAFAFA</color>
+    <color name="light_card_background">#FFFFFF</color>
+    <color name="light_card_primary_text_color">@color/black</color>
+    <color name="light_card_secondary_text_color">@color/lightGrey</color>
+
+    <color name="dark_background">#252429</color>
+    <color name="dark_card_background">#2B2E35</color>
+    <color name="dark_card_primary_text_color">@color/white</color>
+    <color name="dark_card_secondary_text_color">#94979E</color>
+
     <color name="facebookblue">#3b5998</color>
+    <color name="wrong_color">#D32F2F</color>
+    <color name="correct_color">#4CAF50</color>
+    <color name="hint_grey">#E6E6E6</color>
 
     <color name="black_semi_transparent">#B2000000</color>
     <color name="background">#e5e5e5</color>

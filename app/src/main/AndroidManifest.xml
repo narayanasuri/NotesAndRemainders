@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="koolkat.notiminder">
+    package="koolkat.remindify">
 
     <application
+        android:name="koolkat.remindify.App"
         android:allowBackup="true"
-        android:icon="@drawable/bell"
+        android:icon="@drawable/notefy_logo"
         android:label="@string/app_name"
-        android:name=".App"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        </activity>
         <activity
-            android:name=".LauncherActivity"
+            android:name="koolkat.remindify.LauncherActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/NotefyLightTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="koolkat.remindify.NoteActivity"
+            android:label="Note"
+            android:theme="@style/NoteThemeLight">
+        </activity>
+        <activity
+            android:name="koolkat.remindify.SettingsActivity"
+            android:label="Settings"
+            android:theme="@style/NoteThemeLight">
+        </activity>
+        <activity android:name="koolkat.remindify.AboutActivity"
+            android:label="About"
+            android:theme="@style/NoteThemeLight">
         </activity>
     </application>
 

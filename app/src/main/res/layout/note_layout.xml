@@ -1,38 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/reminder_card_view"
+    android:id="@+id/note_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    card_view:cardBackgroundColor="@color/facebookblue"
-    card_view:cardCornerRadius="4dp">
+    card_view:cardBackgroundColor="@color/material_dark"
+    card_view:cardCornerRadius="4dp"
+    app:ignore="NamespaceTypo">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/note_card_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="2dp"
-            android:text="Note Text"
+            android:text="@string/note_sample_title"
             android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/note_card_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxLines="6"
             android:padding="2dp"
             android:text="@string/sample_text"
             android:textColor="@android:color/white"
             android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/note_view_more_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_more"
+                android:contentDescription="@string/note_more" />
+
+        </RelativeLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/note_expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="400">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/palette_note_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/note_palette" />
+
+                <ImageView
+                    android:id="@+id/delete_note_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="4dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/note_delete" />
+
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
 
     </LinearLayout>
 

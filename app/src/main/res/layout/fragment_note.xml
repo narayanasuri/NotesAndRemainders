@@ -2,34 +2,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="koolkat.notiminder.NoteFragment">
+    android:background="?attr/background_color"
+    tools:context="koolkat.remindify.NoteFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:padding="16dp">
+        android:background="?attr/background_color"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/active_notiminders_tv"
-            android:layout_width="wrap_content"
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/notes_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/no_notes_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/new_notiminder_layout"
-            android:text="NOTES"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp" />
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:background="?attr/background_color">
 
-        <include
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/note_layout" />
+            <ImageView
+                android:id="@+id/no_notes_image_view"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/no_notes" />
 
-        <!--<android.support.v7.widget.RecyclerView-->
-            <!--android:id="@+id/notes_recycler_view"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_below="@id/active_notiminders_tv"-->
-            <!--android:scrollbars="vertical" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_notes"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/lightGrey"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
 
     </RelativeLayout>
 

@@ -1,4 +1,4 @@
-package koolkat.notiminder;
+package koolkat.remindify;
 
 import org.junit.Test;
 

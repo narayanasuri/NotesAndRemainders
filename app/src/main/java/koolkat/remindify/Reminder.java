@@ -1,6 +1,4 @@
-package koolkat.notiminder;
-
-import android.graphics.Color;
+package koolkat.remindify;
 
 /**
  * Created by Naray on 30-12-2017.
@@ -8,6 +6,7 @@ import android.graphics.Color;
 
 public class Reminder {
 
+    private int id;
     private String content;
     private boolean isPersistent;
 
@@ -15,7 +14,8 @@ public class Reminder {
 
     }
 
-    public Reminder(String content, boolean isPersistent) {
+    public Reminder(int id, String content, boolean isPersistent) {
+        this.id = id;
         this.content = content;
         this.isPersistent = isPersistent;
     }
@@ -36,4 +36,11 @@ public class Reminder {
         isPersistent = persistent;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

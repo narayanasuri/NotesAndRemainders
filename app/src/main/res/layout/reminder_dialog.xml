@@ -1,6 +1,5 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -15,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Reminder"
+            android:text="@string/reminder_title"
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
@@ -23,7 +22,7 @@
             android:id="@+id/add_reminder_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Buy eggs"
+            android:hint="@string/reminder_hint"
             android:lines="2"
             android:maxLines="2"
             android:textSize="16sp" />
@@ -38,15 +37,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="0/24"
-                android:textColor="@android:color/holo_red_dark"/>
+                android:text="@string/reminder_text_count"
+                android:textColor="@color/wrong_color"/>
 
         </RelativeLayout>
 
         <CheckBox
+            android:id="@+id/reminder_persistent_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Persistent"
+            android:text="@string/persistent"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="CREATE"
+            android:text="@string/create"
             android:background="@android:color/transparent"
             android:textColor="@color/colorAccent"/>
 
@@ -70,9 +70,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toLeftOf="@id/reminder_positive_btn"
-            android:text="DISCARD"
+            android:text="@string/discard"
             android:background="@android:color/transparent"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/colorAccent"
+            android:layout_toStartOf="@id/reminder_positive_btn" />
 
     </RelativeLayout>
 
